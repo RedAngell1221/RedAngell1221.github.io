@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questionnaire</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1 style="text-align: center">
+        Kviz osobnosti prema knjizi <br />
+        „Okruženi idiotima“
+      </h1>
+      <form id="questionnaire">
+        <div class="question">
+          <h3>1. Kada radite na projektu, preferirate sljedeće:</h3>
+          <label
+            ><input type="radio" name="q1" value="Crvena" />Preuzimate vodstvo i
+            donosite odluke.</label
+          >
+          <label
+            ><input type="radio" name="q1" value="Žuta" />Razmišljate o
+            kreativnim idejama i sve u timu uključite u to.</label
+          >
+          <label
+            ><input type="radio" name="q1" value="Zelena" />Osigurate da je
+            svima udobno i da rade skladno.</label
+          >
+          <label
+            ><input type="radio" name="q1" value="Plava" />Usredočavate se na
+            detalje i provjeravate činjenice.</label
+          >
+        </div>
+        <div class="question">
+          <h3>2. U društvenom okruženju najvjerojatnije ćete:</h3>
+          <label
+            ><input type="radio" name="q3" value="Crvena" />Razgovarati sa što
+            više ljudi.</label
+          >
+          <label
+            ><input type="radio" name="q3" value="Žuta" />Bit ćete život zabave
+            i sve zabavljati.</label
+          >
+          <label
+            ><input type="radio" name="q3" value="Zelena" />Provodite vrijeme s
+            nekoliko bliskih prijatelja.</label
+          >
+          <label
+            ><input type="radio" name="q3" value="Plava" />Promatrate i slušate,
+            upuštate se u duboke razgovore.</label
+          >
+        </div>
+        <div class="question">
+          <h3>3. Kada se suočite s problemom, skloni ste:</h3>
+          <label
+            ><input type="radio" name="q4" value="Crvena" />Brzo pronalaziti
+            rješenje.</label
+          >
+          <label
+            ><input type="radio" name="q4" value="Žuta" />Razmišljati izvan
+            okvira i smišljati inovativna rješenja.</label
+          >
+          <label
+            ><input type="radio" name="q4" value="Zelena" />Razmatrati kako će
+            rješenje utjecati na sve uključene.</label
+          >
+          <label
+            ><input type="radio" name="q4" value="Plava" />Analizirati sve
+            moguće ishode prije donošenja odluke.</label
+          >
+        </div>
+        <div class="question">
+          <h3>4. Vaše idealno radno okruženje je:</h3>
+          <label
+            ><input type="radio" name="q5" value="Crvena" />Brzo i
+            natjecateljsko.</label
+          >
+          <label
+            ><input type="radio" name="q5" value="Žuta" />Fleksibilno i
+            kreativno.</label
+          >
+          <label
+            ><input type="radio" name="q5" value="Zelena" />Prijateljski
+            nastrojeno i puno podrške.</label
+          >
+          <label
+            ><input type="radio" name="q5" value="Plava" />Strukturirano i
+            organizirano.</label
+          >
+        </div>
+        <div class="question">
+          <h3>5. Pri donošenju odluke prioritet Vam je:</h3>
+          <label
+            ><input type="radio" name="q2" value="Crvena" />Učinkovitost i
+            rezultati.</label
+          >
+          <label
+            ><input type="radio" name="q2" value="Žuta" />Uzbuđenje i
+            potencijal.</label
+          >
+          <label
+            ><input type="radio" name="q2" value="Zelena" />Dogovor i
+            sklad.</label
+          >
+          <label
+            ><input type="radio" name="q2" value="Plava" />Činjenice i
+            podaci.</label
+          >
+        </div>
+
+        <div class="question">
+          <h3>6. Kao osobu drugi Vas opisuju kao:</h3>
+          <label
+            ><input type="radio" name="q6" value="Crvena" />Samouvjerenu i
+            upornu.</label
+          >
+          <label
+            ><input type="radio" name="q6" value="Žuta" />Entuzijastičnu i
+            karizmatičnu.</label
+          >
+          <label
+            ><input type="radio" name="q6" value="Zelena" />Brižnu i
+            pouzdanu.</label
+          >
+          <label
+            ><input type="radio" name="q6" value="Plava" />Analitačnu i
+            preciznu.</label
+          >
+        </div>
+        <div class="question">
+          <h3>7. U stresnim situacijama Vi:</h3>
+          <label
+            ><input type="radio" name="q7" value="Crvena" />Preuzimate kontrolu
+            i upravljate situacijom.</label
+          >
+          <label
+            ><input type="radio" name="q7" value="Žuta" />Ostanete optimistični
+            i pokušate svima podići raspoloženje.</label
+          >
+          <label
+            ><input type="radio" name="q7" value="Zelena" />Podržavate druge i
+            ostajete smireni.</label
+          >
+          <label
+            ><input type="radio" name="q7" value="Plava" />Ostanete pribrani i
+            razmišljate logično.</label
+          >
+        </div>
+        <button type="button" onclick="calculateResult()" class="submitButton">
+          Submit
+        </button>
+      </form>
+    </div>
+    <div id="result" style="display: none">
+      <h2 id="yourResult"></h2>
+      <p id="resultText"></p>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

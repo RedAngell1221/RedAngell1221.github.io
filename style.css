@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(204, 204, 184);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#questionnaire {
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 1em;
+}
+
+.submitButton {
+  width: 15%;
+  margin: 1em auto;
+  text-align: center;
+  justify-self: center;
+}
+
+body.Crvena {
+  background-color: #cf5353;
+  color: white;
+}
+
+body.Žuta {
+  background-color: #fff838;
+  color: #0e0d0d;
+}
+
+body.Zelena {
+  background-color: rgb(52, 172, 52);
+  color: white;
+}
+
+body.Plava {
+  background-color: rgb(35, 70, 185);
+  color: #fff;
+}
+
+#result {
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .submitButton {
+    width: 15%;
+  }
+}
