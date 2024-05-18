@@ -25,7 +25,7 @@ function calculateResult() {
   if (maxAnswer === 'Crvena') {
     resultText.textContent = `Vi ste motivirani, asertivni i orijentirani na rezultate. Volite preuzimati odgovornost i učinkovito postizati ciljeve.`;
   } else if (maxAnswer === 'Žuta') {
-    resultText.textContent = `Entuzijastični ste, društveni i kreativni. Uživate razmišljati i inspirirati druge svojom energijom.`;
+    resultText.textContent = `Entuzijastični ste, društveni i kreativni. Volite inspirirati druge svojom energijom.`;
   } else if (maxAnswer === 'Zelena') {
     resultText.textContent = `Brižni ste, pružate podršku i pouzdani ste. Cijenite sklad i dobro radite u timskim okruženjima.`;
   } else if (maxAnswer === 'Plava') {
